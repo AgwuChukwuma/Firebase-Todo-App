@@ -12,7 +12,9 @@ const Todo = ({ todo, updateStatus, deleteTodo }) => {
       const todoRef = doc(db, 'todos', todo.id);
       await updateDoc(todoRef, { text: editedText });
     }
+
     setIsEditing(false);
+    
   };
 
   return (
