@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: whitesmoke;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  position: absolute; 
+  top: 2%; 
+  left: 2%;
+}
+
+
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.kanban-column {
+  flex: 1;
+  min-width: 350px;
+  min-height: 500px;
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.2s;
+}
+
+.kanban-column:hover {
+  transform: translateY(-3px);
+}
+
+.kanban-column h3 {
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-text {
+  font-size: 1.3rem;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 9px;
+}
+.todo-actions button{
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.todo-actions button :hover{
+  color: rgba(255, 0, 0, 0.621);
+}
+
+.add-task-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 12px 20px;
+  width: auto;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: gray;
+  transition: all 1s ease;
+  gap: 8px;
+}
+
+.add-task-btn:hover {
+  background: rgb(233, 233, 233);
+  color: gray;
+  border-radius: 8%;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.todo-button {
+  background-color: rgba(128, 128, 128, 0.457);
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+.todo-button:hover {
+  background-color: rgba(8, 126, 61, 0.42);
+}
+
+.task-count {
+  font-size: 1rem;
+  color: #333;  
+  margin-left: 5px;
+  padding: 2px 8px; 
+  border-radius: 5px;
+  background-color: #f0f0f0; 
+  font-weight: bold;
+}
+.todo-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.task-date {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+  display: block;
+}
